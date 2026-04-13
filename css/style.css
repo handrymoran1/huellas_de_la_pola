@@ -1,53 +1,72 @@
 :root {
-  --beige-claro: #CCC5B7;
-  --blanco: #FFFFFF;
-  --ocre-suave: #E5BB89;
-  --bronce-oscuro: #6F5D44;
+  /* colores corporativos y fuentes */
+  --color-primary: #ccc5b7;
+  --color-secondary: #ffffff;
+  --color-accent: #e5bb89;
+  --color-dark: #6f5d44;
+  --font-title: "Berkshire Swash", cursive;
+  --font-body: "Yrsa", serif;
 }
-
+ 
 body {
-    background-color: #f9f8f5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-body);
 }
-
-.card-tarjeta {
-    background-color: var(--blanco);
-    border-radius: 12px;
-    height: 100%;
-    border: 1px solid #eee;
-    transition: transform 0.3s ease, shadow 0.3s ease;
+ 
+.custom-navbar {
+  background-color: var(--color-primary);
 }
-
-.card-tarjeta:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-}
-
-.borde-bronce-oscuro {
-    border-left: 10px solid var(--bronce-oscuro) !important;
-}
-
-.borde-ocre {
-    border-left: 10px solid var(--ocre-suave) !important;
-}
-
-.titulo-bronce-oscuro {
-    color: var(--bronce-oscuro);
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.titulo-ocre {
-    color: var(--ocre-suave);
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
+ 
 .navbar-brand {
-    font-size: 1.4rem;
+  font-family: var(--font-title);
+  font-size: 1.8rem;
 }
-
-.nav-link.active {
-    color: var(--bronce-oscuro) !important;
-    border-bottom: 2px solid var(--bronce-oscuro);
+ 
+.navbar-brand,
+.nav-link {
+  color: var(--color-dark) !important;
+}
+ 
+.nav-link:hover {
+  color: var(--color-accent) !important;
+}
+ 
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+ 
+p, a, li, button {
+  font-family: var(--font-body);
+}
+ 
+.custom-btn-primary {
+  background-color: var(--color-dark);
+  border: none;
+  color: white;
+}
+ 
+.custom-btn-primary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+ 
+.custom-btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--color-dark);
+  color: var(--color-dark);
+}
+ 
+.custom-btn-secondary:hover {
+  background-color: var(--color-dark);
+  color: white;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+ 
+@media (max-width: 768px) {
+  .logo-nav {
+    height: 50px;
+    margin-right: 10px;
+  }
 }
