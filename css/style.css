@@ -27,7 +27,7 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--color-accent) !important;
+  color: var(--color-secondary) !important;
 }
 
 h1, h2, h3 {
@@ -56,7 +56,7 @@ p, a, li, button {
 }
 
 .custom-btn-secondary:hover {
-  background-color: var(--color-dark);
+  background-color: var(--color-accent);
   color: white;
 }
 .navbar-brand {
