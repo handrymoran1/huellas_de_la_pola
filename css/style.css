@@ -1,3 +1,64 @@
+:root {
+  /* colores corporativos y fuentes */
+  --color-primary: #ccc5b7;
+  --color-secondary: #ffffff;
+  --color-accent: #e5bb89;
+  --color-dark: #6f5d44;
+  --font-title: "Berkshire Swash", cursive;
+  --font-body: "Yrsa", serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.custom-navbar {
+  background-color: var(--color-primary);
+}
+
+.navbar-brand {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--color-dark) !important;
+}
+
+.nav-link:hover {
+  color: var(--color-accent) !important;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+p, a, li, button {
+  font-family: var(--font-body);
+}
+
+.custom-btn-primary {
+  background-color: var(--color-dark);
+  border: none;
+  color: white;
+}
+
+.custom-btn-primary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.custom-btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--color-dark);
+  color: var(--color-dark);
+}
+
+.custom-btn-secondary:hover {
+  background-color: var(--color-dark);
+  color: white;
+}
 .navbar-brand {
   display: flex;
   align-items: center;
