@@ -1,7 +1,0 @@
-/* ── Banner controlado ── */
-.carouselExampleSlidesOnly .carousel-item img {
-     height: 500px;        /* ajusta según necesites */
-     object-fit: cover;
-     object-position: center;
-        
-}
