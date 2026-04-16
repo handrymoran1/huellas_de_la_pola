@@ -11,6 +11,7 @@
 body {
   font-family: var(--font-body);
 }
+
 /*desde aquí es el navbard (!!!no tocar!!!) */
 .custom-navbar {
   background-color: var(--color-primary);
@@ -80,9 +81,9 @@ button {
 }
 
 .card-text {
-  color: #8b7a66;
-  font-size: 0.9rem;
-  font-weight: 500;
+    color: #8b7a66;
+    font-size: medium;
+    font-weight: 400;
 }
 
 .container.my-5 {
@@ -98,6 +99,7 @@ h1.text-center {
   position: relative;
   padding-bottom: 15px;
 }
+
 h1.text-center::after {
   content: "";
   position: absolute;
@@ -120,11 +122,15 @@ h1.text-center::after {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
 
+.btn{
+  font-size: medium;
+}
 /* btn de las redes */
 .custom-btn-outline-primary {
   background-color: var(--color-accent);
@@ -161,4 +167,32 @@ h1.text-center::after {
     height: 50px;
     margin-right: 10px;
   }
+}
+
+.titulo-mision-vision {
+  font-family: var(--font-title);
+  color: var(--color-dark);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.texto-mision-vision {
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.card-tarjeta {
+  color: rgb(238, 238, 238);
+  border: solid 1px var(--color-accent);
+  border-radius: 8px;
+}
+
+.borde-bronce {
+  border-top: 5px solid var(--color-accent);
+}
+
+.borde-ocre {
+  border-top: 5px solid var(--color-accent);
 }
