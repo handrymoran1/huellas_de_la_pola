@@ -1,7 +1,5 @@
-/* ============================================
-   FOOTER
-   ============================================ */
-/* 
+
+/* ── Temporal, por que ya esta en la principal del css de seccion nosotros, solo es para la perzonalizacion ── */
 :root {
   --color-primary: #ccc5b7;
   --color-secondary: #ffffff;
@@ -11,11 +9,11 @@
   --font-body: "Yrsa", serif;
 }
 
-body {
-  font-family: var(--font-body);
-}
 
-/* ── Footer ── */
+/* ===========================================================
+   FOOTER "AGREGAR ESTA SECCION AL CSS PRINCIPAL DE NOSOTROS"
+   ============================================ */
+
 .footer {
   background-color: var(--color-dark);
   color: var(--color-secondary);
@@ -43,7 +41,7 @@ body {
   color: var(--color-accent);
 }
 
-/* ── Lista de navegación ── */
+/* ── Margen Lista de navegación ── */
 .footer ul li {
   margin-bottom: 8px;
-} */
+} 
