@@ -1,0 +1,59 @@
+:root {
+  /* colores corporativos y fuentes */
+  --color-primary: #ccc5b7;
+  --color-secondary: #ffffff;
+  --color-accent: #e5bb89;
+  --color-dark: #6f5d44;
+  --font-title: "Berkshire Swash", cursive;
+  --font-body: "Yrsa", serif;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+:root {
+  --color-primary: #ccc5b7;
+  --color-secondary: #ffffff;
+  --color-accent: #e5bb89;
+  --color-dark: #6f5d44;
+  --font-title: "Berkshire Swash", cursive;
+  --font-body: "Yrsa", serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+/* ── Footer ── */
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
+}
+
+.footer p {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+}
+
+.footer hr {
+  border-color: var(--color-accent);
+  opacity: 0.5;
+}
+
+/* ── Links ── */
+.footer-link {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--color-accent);
+}
+
+/* ── Lista de navegación ── */
+.footer ul li {
+  margin-bottom: 8px;
+}
