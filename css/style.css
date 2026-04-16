@@ -7,70 +7,71 @@
   --font-title: "Berkshire Swash", cursive;
   --font-body: "Yrsa", serif;
 }
-
+ 
 body {
   font-family: var(--font-body);
 }
+ 
 /*desde aquí es el navbard (!!!no tocar!!!) */
 .custom-navbar {
   background-color: var(--color-primary);
 }
-
+ 
 .navbar-brand {
   font-family: var(--font-title);
   font-size: 1.8rem;
 }
-
+ 
 .navbar-brand,
 .nav-link {
   color: var(--color-dark) !important;
 }
-
+ 
 .nav-link:hover {
   color: var(--color-secondary) !important;
 }
-
+ 
 h1,
 h2,
 h3 {
   font-family: var(--font-title);
 }
-
+ 
 p,
 a,
 li,
 button {
   font-family: var(--font-body);
 }
-
+ 
 .custom-btn-primary {
   background-color: var(--color-dark);
   border: none;
   color: white;
 }
-
+ 
 .custom-btn-primary:hover {
   background-color: var(--color-accent);
   color: var(--color-dark);
 }
-
+ 
 .custom-btn-secondary {
   background-color: transparent;
   border: 2px solid var(--color-dark);
   color: var(--color-dark);
 }
-
+ 
 .custom-btn-secondary:hover {
   background-color: var(--color-accent);
   color: white;
 }
-
+ 
 /* desde aquí comienza el sobre nosotros brayan */
-
+ 
 .card-body {
   padding: 1.25rem;
 }
-
+ 
 .card-title {
   color: #6f5d44;
   font-weight: 700;
@@ -78,26 +79,27 @@ button {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-
+ 
 .card-text {
-  color: #8b7a66;
-  font-size: 0.9rem;
-  font-weight: 500;
+    color: #8b7a66;
+    font-size: medium;
+    font-weight: 400;
 }
-
+ 
 .container.my-5 {
   background-color: #ffffff;
   border-radius: 20px;
   padding: 30px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-
+ 
 h1.text-center {
   color: #6f5d44;
   font-weight: 400;
   position: relative;
   padding-bottom: 15px;
 }
+ 
 h1.text-center::after {
   content: "";
   position: absolute;
@@ -109,7 +111,7 @@ h1.text-center::after {
   background-color: #e5bb89;
   border-radius: 2px;
 }
-
+ 
 .card {
   border: none;
   border-radius: 16px;
@@ -120,45 +122,78 @@ h1.text-center::after {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
+ 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
-
+ 
+.btn{
+  font-size: medium;
+}
 /* btn de las redes */
 .custom-btn-outline-primary {
   background-color: var(--color-accent);
 }
-
+ 
 .custom-btn-outline-primary:hover {
   border: solid 2px var(--color-accent);
 }
-
+ 
 .custom-btn-outline-accent {
   border: 2px solid var(--color-accent);
   color: var(--color-dark);
   background-color: transparent;
 }
-
+ 
 .custom-btn-outline-accent:hover {
   background-color: var(--color-accent);
   color: white;
 }
-
+ 
 .custom-btn-outline-dark {
   border: 2px solid var(--color-dark);
   color: var(--color-dark);
   background-color: transparent;
 }
-
+ 
 .custom-btn-outline-dark:hover {
   background-color: var(--color-accent);
   color: white;
 }
-
+ 
 @media (max-width: 768px) {
   .logo-nav {
     height: 50px;
     margin-right: 10px;
   }
 }
+ 
+.titulo-mision-vision {
+  font-family: var(--font-title);
+  color: var(--color-dark);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+ 
+.texto-mision-vision {
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+ 
+.card-tarjeta {
+  color: rgb(238, 238, 238);
+  border: solid 1px var(--color-accent);
+  border-radius: 8px;
+}
+ 
+.borde-bronce {
+  border-top: 5px solid var(--color-accent);
+}
+ 
+.borde-ocre {
+  border-top: 5px solid var(--color-accent);
+}
+
