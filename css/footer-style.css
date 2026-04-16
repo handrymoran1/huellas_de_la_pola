@@ -1,17 +1,7 @@
-:root {
-  /* colores corporativos y fuentes */
-  --color-primary: #ccc5b7;
-  --color-secondary: #ffffff;
-  --color-accent: #e5bb89;
-  --color-dark: #6f5d44;
-  --font-title: "Berkshire Swash", cursive;
-  --font-body: "Yrsa", serif;
-}
-
 /* ============================================
    FOOTER
    ============================================ */
-
+/* 
 :root {
   --color-primary: #ccc5b7;
   --color-secondary: #ffffff;
@@ -56,4 +46,4 @@ body {
 /* ── Lista de navegación ── */
 .footer ul li {
   margin-bottom: 8px;
-}
+} */
