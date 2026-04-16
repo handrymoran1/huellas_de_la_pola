@@ -11,7 +11,7 @@
 body {
   font-family: var(--font-body);
 }
-
+/*desde aquí es el navbard (!!!no tocar!!!) */
 .custom-navbar {
   background-color: var(--color-primary);
 }
@@ -27,14 +27,19 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--color-accent) !important;
+  color: var(--color-secondary) !important;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-title);
 }
 
-p, a, li, button {
+p,
+a,
+li,
+button {
   font-family: var(--font-body);
 }
 
@@ -56,12 +61,99 @@ p, a, li, button {
 }
 
 .custom-btn-secondary:hover {
-  background-color: var(--color-dark);
+  background-color: var(--color-accent);
   color: white;
 }
-.navbar-brand {
-  display: flex;
-  align-items: center;
+
+/* desde aquí comienza el sobre nosotros brayan */
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  color: #6f5d44;
+  font-weight: 700;
+  height: 50px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #8b7a66;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.container.my-5 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1.text-center {
+  color: #6f5d44;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 15px;
+}
+h1.text-center::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e5bb89;
+  border-radius: 2px;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* btn de las redes */
+.custom-btn-outline-primary {
+  background-color: var(--color-accent);
+}
+
+.custom-btn-outline-primary:hover {
+  border: solid 2px var(--color-accent);
+}
+
+.custom-btn-outline-accent {
+  border: 2px solid var(--color-accent);
+  color: var(--color-dark);
+  background-color: transparent;
+}
+
+.custom-btn-outline-accent:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.custom-btn-outline-dark {
+  border: 2px solid var(--color-dark);
+  color: var(--color-dark);
+  background-color: transparent;
+}
+
+.custom-btn-outline-dark:hover {
+  background-color: var(--color-accent);
+  color: white;
 }
 
 @media (max-width: 768px) {
