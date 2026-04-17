@@ -82,8 +82,19 @@ p, a, li {
   background-color: var(--color-accent);
   color: var(--color-dark)
 }
- 
 
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  .logo-nav {
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+  }
+}
+ 
 
 /* desde aquí comienza el sobre nosotros brayan */
  
@@ -137,7 +148,7 @@ h1.text-center::after {
 .card {
   border: 100;
   border-radius: 20px;
- box-shadow: #6f5d44;
+  box-shadow: 25px;
   transition:
     transform 0.2s,
     box-shadow 0.2s;
@@ -183,12 +194,6 @@ h1.text-center::after {
   color: white;
 }
  
-@media (max-width: 768px) {
-  .logo-nav {
-    height: 50px;
-    margin-right: 10px;
-  }
-}
 
 .card-img-top {
   width: 180px;          
