@@ -1,76 +1,90 @@
+/* ══════════════════════════════
+   VARIABLES CORPORATIVAS
+══════════════════════════════ */
 :root {
-  /* colores corporativos y fuentes */
-  --color-primary: #ccc5b7;
-  --color-secondary: #ffffff;
-  --color-accent: #e5bb89;
-  --color-dark: #6f5d44;
+  --color-primary: #ccc5b7;    /* beige claro */
+  --color-secondary: #ffffff;  /* blanco */
+  --color-accent: #e5bb89;     /* dorado */
+  --color-dark: #6f5d44;       /* café oscuro */
   --font-title: "Berkshire Swash", cursive;
   --font-body: "Yrsa", serif;
 }
- 
+
+/* ══════════════════════════════
+   FUENTE GLOBAL DEL BODY
+══════════════════════════════ */
 body {
   font-family: var(--font-body);
 }
- 
-/*desde aquí es el navbard (!!!no tocar!!!) */
-.custom-navbar {
-  background-color: var(--color-primary);
-}
- 
-.navbar-brand {
+
+/* ══════════════════════════════
+   FUENTES POR ETIQUETA
+══════════════════════════════ */
+h1, h2, h3 {
   font-family: var(--font-title);
-  font-size: 1.8rem;
-}
- 
-.navbar-brand {
-  color: var(--color-dark) !important;
-  font-size: 35px;
 }
 
-.nav-link {
-  color: var(--color-dark) !important;
-  font-size: 18px;
+p, a, li {
+  font-family: var(--font-body);   
 }
- 
-.nav-link:hover {
+
+/* ══════════════════════════════
+   NAVBAR
+══════════════════════════════ */
+.custom-navbar {
+  background-color: var(--color-dark);
+}
+
+/* Marca / Logo texto */
+.navbar-brand {
+  font-family: var(--font-title);
+  font-size: 35px;
   color: var(--color-secondary) !important;
 }
- 
-h1,
-h2,
-h3 {
-  font-family: var(--font-title);
-}
- 
-p,
-a,
-li,
-button {
+
+/* Links del nav */
+.nav-link {
   font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--color-secondary) !important;
 }
- 
+
+.nav-link:hover {
+  color: var(--color-accent) !important;
+}
+
+/* ══════════════════════════════
+   BOTÓN INICIAR SESIÓN
+══════════════════════════════ */
 .custom-btn-primary {
-  background-color: var(--color-dark);
-  border: none;
-  color: white;
-}
- 
-.custom-btn-primary:hover {
+  font-family: var(--font-body);
   background-color: var(--color-accent);
+  border: none;
+  color: #000000;          
+}
+
+.custom-btn-primary:hover {
+  background-color: var(--color-secondary);
   color: var(--color-dark);
 }
- 
+
+/* ══════════════════════════════
+   BOTÓN REGISTRARSE
+══════════════════════════════ */
 .custom-btn-secondary {
+  font-family: var(--font-body);
   background-color: transparent;
-  border: 2px solid var(--color-dark);
-  color: var(--color-dark);
+  border: 2px solid var(--color-secondary);
+  color: #ffffff;          
 }
- 
+
 .custom-btn-secondary:hover {
   background-color: var(--color-accent);
-  color: white;
+  color: var(--color-dark)
 }
  
+
+
 /* desde aquí comienza el sobre nosotros brayan */
  
 .card-body {
@@ -83,12 +97,15 @@ button {
   height: 50px;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  text-align: center;
+  
 }
  
 .card-text {
     color: #8b7a66;
     font-size: medium;
     font-weight: 400;
+    text-align: center;
 }
  
 .container.my-5 {
@@ -118,14 +135,13 @@ h1.text-center::after {
 }
  
 .card {
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
+  border: 100;
+  border-radius: 20px;
+ box-shadow: #6f5d44;
   transition:
     transform 0.2s,
     box-shadow 0.2s;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(211, 22, 22, 0.05);
 }
  
 .card:hover {
@@ -182,6 +198,11 @@ h1.text-center::after {
   margin: 1.5rem auto 0; 
   display: block;
 }
+
+
+/* ══════════════════════════════
+   MISION Y VISION
+══════════════════════════════ */
  
 .titulo-mision-vision {
   font-family: var(--font-title);
