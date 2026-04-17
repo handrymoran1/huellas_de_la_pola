@@ -65,7 +65,7 @@ li {
   background-color: var(--color-accent);
   border: none;
   color: #000000;
-  width: 100px;
+  width: 150px;
 }
 
 .custom-btn-primary:hover {
@@ -81,7 +81,7 @@ li {
   background-color: transparent;
   border: 2px solid var(--color-secondary);
   color: #ffffff;
-      width: 100px;
+  width: 150px;
 }
 
 .custom-btn-secondary:hover {
