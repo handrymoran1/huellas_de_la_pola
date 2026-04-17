@@ -83,6 +83,9 @@ p, a, li {
   color: var(--color-dark)
 }
 
+/* ══════════════════════════════
+   NAV VERSION MOBILE 
+══════════════════════════════ */
 @media (max-width: 768px) {
   .navbar-brand {
     font-size: 22px;
