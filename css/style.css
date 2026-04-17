@@ -22,9 +22,14 @@ body {
   font-size: 1.8rem;
 }
  
-.navbar-brand,
+.navbar-brand {
+  color: var(--color-dark) !important;
+  font-size: 35px;
+}
+
 .nav-link {
   color: var(--color-dark) !important;
+  font-size: 18px;
 }
  
 .nav-link:hover {
@@ -168,6 +173,15 @@ h1.text-center::after {
     margin-right: 10px;
   }
 }
+
+.card-img-top {
+  width: 180px;          
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  margin: 1.5rem auto 0; 
+  display: block;
+}
  
 .titulo-mision-vision {
   font-family: var(--font-title);
@@ -197,10 +211,11 @@ h1.text-center::after {
   border-top: 5px solid var(--color-accent);
 }
 
-
+/* FOOTER*/
 .footer {
   background-color: var(--color-dark);
   color: var(--color-secondary);
+  margin-top: 100px;
 }
 
 .footer p {
@@ -219,6 +234,7 @@ h1.text-center::after {
   font-family: var(--font-body);
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 18px;
 }
 
 .footer-link:hover {
@@ -229,6 +245,10 @@ h1.text-center::after {
 .footer ul li {
   margin-bottom: 8px;
 } 
+
+.texto-derechos {
+  color: #e5bb89 !important; /* el color que quieras */
+}
 
 /* *********************************************************** */
 
