@@ -17,6 +17,7 @@
 .footer {
   background-color: var(--color-dark);
   color: var(--color-secondary);
+  padding: auto;
 }
 
 .footer p {
