@@ -2,10 +2,12 @@
    VARIABLES CORPORATIVAS
 ══════════════════════════════ */
 :root {
-  --color-primary: #ccc5b7; /* beige claro */
-  --color-secondary: #ffffff; /* blanco */
-  --color-accent: #e5bb89; /* dorado */
-  --color-dark: #6f5d44; /* café oscuro */
+  --color-primary: #ccc5b7;
+  --color-secondary: #ffffff;
+  --color-accent: #e5bb89;
+  --color-dark: #6f5d44;
+  --color-button: #5FA62D;
+  --color-opcional: #1B4015;
   --font-title: "Berkshire Swash", cursive;
   --font-body: "Yrsa", serif;
 }
@@ -17,289 +19,84 @@ body {
   font-family: var(--font-body);
 }
 
-/* ══════════════════════════════
-   FUENTES POR ETIQUETA
-══════════════════════════════ */
-h1,
-h2,
-h3 {
-  font-family: var(--font-title);
-}
-
-p,
-a,
-li {
-  font-family: var(--font-body);
-}
+h1, h2, h3 { font-family: var(--font-title); }
+p, a, li   { font-family: var(--font-body); }
 
 /* ══════════════════════════════
    NAVBAR
 ══════════════════════════════ */
 .custom-navbar {
-  background-color: var(--color-dark);
+  background-color: var(--color-opcional);
 }
 
-/* Marca / Logo texto */
 .navbar-brand {
   font-family: var(--font-title);
   font-size: 35px;
   color: var(--color-secondary) !important;
 }
 
-/* Links del nav */
 .nav-link {
   font-family: var(--font-body);
   font-size: 18px;
   color: var(--color-secondary) !important;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-link:hover {
   color: var(--color-accent) !important;
+  transform: translateY(-2px);
 }
 
-/* ══════════════════════════════
-   BOTÓN INICIAR SESIÓN
-══════════════════════════════ */
 .custom-btn-primary {
   font-family: var(--font-body);
-  background-color: var(--color-accent);
+  font-size: 17px;
+  background-color: var(--color-button);
   border: none;
-  color: #000000;
-  width: 150px;
+  color: #ffffff;
+  width: 150px !important;
 }
 
 .custom-btn-primary:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary) !important;
   color: var(--color-dark);
 }
 
-/* ══════════════════════════════
-   BOTÓN REGISTRARSE
-══════════════════════════════ */
 .custom-btn-secondary {
   font-family: var(--font-body);
+  font-size: 17px;
   background-color: transparent;
   border: 2px solid var(--color-secondary);
   color: #ffffff;
-  width: 150px;
+  width: 150px !important;
 }
 
 .custom-btn-secondary:hover {
   background-color: var(--color-accent);
-  color: var(--color-dark);
+  color: var(--color-opcional);
 }
 
-/* ══════════════════════════════
-   NAV VERSION MOBILE 
-══════════════════════════════ */
-@media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 22px;
-  }
-
-  .logo-nav {
-    height: 40px;
-    width: 40px;
-    margin-right: 8px;
-  }
-}
- 
-/* ══════════════════════════════
-   BOTÓN HAMBURGUESA
-══════════════════════════════ */
 .navbar-toggler {
-  border-color: var(--color-secondary); /* ✏️ color del borde */
+  border-color: var(--color-secondary);
+  
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  /* ✏️ cambia el rgba para cambiar el color de las 3 líneas */
+  
 }
 
 .navbar-toggler:focus {
-  box-shadow: none; /* quita el contorno azul al hacer clic */
+  box-shadow: none;
 }
 
-
-/* desde aquí comienza el sobre nosotros brayan */
-
-.card-body {
-  padding: 1.25rem;
-}
-
-.card-title {
-  color: #6f5d44;
-  font-weight: 700;
-  height: 50px;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.card-text {
-  color: #8b7a66;
-  font-size: medium;
-  font-weight: 400;
-  text-align: center;
-}
-
-.container.my-5 {
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 30px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-h1.text-center {
-  color: #6f5d44;
-  font-weight: 400;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-h1.text-center::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: #e5bb89;
-  border-radius: 2px;
-}
-
-.card {
-  border: 100;
-  border-radius: 20px;
-  box-shadow: 25px;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-  box-shadow: 0 4px 8px rgba(211, 22, 22, 0.05);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-  font-size: medium;
-}
-/* btn de las redes */
-.custom-btn-outline-primary {
-  background-color: var(--color-accent);
-}
-
-.custom-btn-outline-primary:hover {
-  border: solid 2px var(--color-accent);
-}
-
-.custom-btn-outline-accent {
-  border: 2px solid var(--color-accent);
-  color: var(--color-dark);
-  background-color: transparent;
-}
-
-.custom-btn-outline-accent:hover {
-  background-color: var(--color-accent);
-  color: white;
-}
-
-.custom-btn-outline-dark {
-  border: 2px solid var(--color-dark);
-  color: var(--color-dark);
-  background-color: transparent;
-}
-
-.custom-btn-outline-dark:hover {
-  background-color: var(--color-accent);
-  color: white;
-}
-
-.card-img-top {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  object-position: top;
-  margin: 1.5rem auto 0;
-  display: block;
+@media (max-width: 768px) {
+  .navbar-brand { font-size: 22px; }
+  .logo-nav { height: 40px; width: 40px; margin-right: 8px; }
 }
 
 /* ══════════════════════════════
-   MISION Y VISION
+   BANNER NOSOTROS
 ══════════════════════════════ */
-
-.titulo-mision-vision {
-  font-family: var(--font-title);
-  color: var(--color-dark);
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.texto-mision-vision {
-  font-family: var(--font-body);
-  color: var(--color-dark);
-  font-size: 1.5rem;
-  line-height: 1.4;
-}
-
-.card-tarjeta {
-  color: rgb(238, 238, 238);
-  border: solid 1px var(--color-accent);
-  border-radius: 8px;
-}
-
-.borde-bronce {
-  border-top: 5px solid var(--color-accent);
-}
-
-.borde-ocre {
-  border-top: 5px solid var(--color-accent);
-}
-
-/* FOOTER*/
-.footer {
-  background-color: var(--color-dark);
-  color: var(--color-secondary);
-  margin-top: 100px;
-}
-
-.footer p {
-  color: var(--color-primary);
-  font-family: var(--font-body);
-}
-
-.footer hr {
-  border-color: var(--color-accent);
-  opacity: 0.5;
-}
-
-/* ── Links ── */
-.footer-link {
-  color: var(--color-primary);
-  font-family: var(--font-body);
-  text-decoration: none;
-  transition: color 0.3s;
-  font-size: 18px;
-}
-
-.footer-link:hover {
-  color: var(--color-accent);
-}
-
-/* ── Margen Lista de navegación ── */
-.footer ul li {
-  margin-bottom: 8px;
-}
-
-.texto-derechos {
-  color: #e5bb89 !important; /* el color que quieras */
-}
-
-/* *********************************************************** */
-
 .carousel-item {
   position: relative;
 }
@@ -339,3 +136,225 @@ h1.text-center::after {
   font-family: "Berkshire Swash", serif;
   margin-bottom: 0;
 }
+
+/* banner nosotros mobile */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px;      
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem;  /
+  }
+}
+
+
+/* ══════════════════════════════
+   MISION Y VISION
+══════════════════════════════ */
+.titulo-mision-vision {
+  font-family: var(--font-title);
+  color: var(--color-button);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.texto-mision-vision {
+  font-family: var(--font-body);
+  color: var(--color-opcional);
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .texto-mision-vision {
+    font-size: 1rem;  /* ✏️ solo en móvil */
+  }
+
+.titulo-mision-vision {
+    font-size: 1.8rem; /* ✏️ título también */
+  }
+}
+
+.card-tarjeta {
+  color: rgb(238, 238, 238);
+  border: solid 1px var(--color-accent);
+  border-radius: 8px;
+}
+
+.borde-bronce {
+  border-top: 5px solid var(--color-button);
+}
+
+.borde-ocre {
+  border-top: 5px solid var(--color-accent);
+}
+
+
+/* ══════════════════════════════
+   NUESTRO EQUIPO/CARDS
+══════════════════════════════ */
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-img-top {
+  width: 150px;          
+  height: 150px;         
+  object-fit: cover;
+  object-position: top;  
+  margin: 1.5rem auto 0;
+  display: block;
+  border-radius: 50%;    
+}
+
+.card-title {
+  color: #6f5d44;
+  font-weight: 700;
+  height: 50px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-text {
+  color: #8b7a66;
+  font-size: medium;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container.my-5 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1.text-center {
+  color: var(--color-opcional);
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+h1.text-center::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e5bb89;
+  border-radius: 2px;
+}
+
+.card {
+  border: 1000;
+  border-radius: 20px;
+  box-shadow: 25px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  box-shadow: 0 2px 5px #5FA62D
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* btn de las redes */
+.social-icon {
+  font-size: 1.5rem;       
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);   
+}
+
+/* LinkedIn */
+.social-icon.linkedin {
+  color: var(--color-button);           
+}
+
+.social-icon.linkedin:hover {
+  color: var(--color-accent)          
+}
+
+/* GitHub */
+.social-icon.github {
+  color: #6f5d44;           
+}
+
+.social-icon.github:hover {
+  color: var(--color-accent); 
+}
+
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.footer {
+  background-color: var(--color-opcional);
+  color: var(--color-secondary);
+  margin-top: 100px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .logo-footer {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer p {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+}
+
+.footer hr {
+  border-color: var(--color-accent);
+  opacity: 0.5;
+}
+
+.footer-link {  
+  display: inline-block;  
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-accent);
+  transform: translateY(-2px);
+  
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.texto-derechos {
+  color: #e5bb89 !important;
+}
+
+/* *********************************************************** */
+
+
+
+
