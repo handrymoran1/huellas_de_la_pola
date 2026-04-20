@@ -1,0 +1,37 @@
+{
+  "name": "huellas-de-la-pola",
+  "version": "1.0.0",
+  "description": "Plataforma turística para Huellas de la Pola",
+  "scripts": {
+    "build": "parcel build index.html --dist-dir dist --no-source-maps",
+    "dev": "parcel index.html --open",
+    "server": "node server.js",
+    "dev-server": "nodemon server.js --watch server.js --watch data",
+    "lint": "eslint js/*.js --fix",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.16.4",
+    "@parcel/transformer-jsonld": "^2.16.4",
+    "@parcel/transformer-webmanifest": "^2.16.4",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "parcel": "^2.12.0",
+    "prettier": "^3.2.5"
+  },
+  "keywords": [
+    "turismo",
+    "hoteles",
+    "guaduas"
+  ],
+  "author": "",
+  "license": "MIT"
+}

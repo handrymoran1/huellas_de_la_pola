@@ -1,0 +1,298 @@
+/* ══════════════════════════════
+   VARIABLES CORPORATIVAS
+══════════════════════════════ */
+:root {
+  --color-primary: #ccc5b7;
+  --color-secondary: #ffffff;
+  --color-accent: #e5bb89;
+  --color-dark: #6f5d44;
+  --color-button: #5FA62D;
+  --color-opcional: #1B4015;
+  --font-title: "Berkshire Swash", cursive;
+  --font-body: "Yrsa", serif;
+}
+
+/* ══════════════════════════════
+   FUENTE GLOBAL DEL BODY
+══════════════════════════════ */
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 { font-family: var(--font-title); }
+p, a, li   { font-family: var(--font-body); }
+
+/* ══════════════════════════════
+   NAVBAR
+══════════════════════════════ */
+.custom-navbar {
+  background-color: var(--color-opcional);
+}
+
+.navbar-brand {
+  font-family: var(--font-title);
+  font-size: 35px;
+  color: var(--color-secondary) !important;
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--color-secondary) !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-accent) !important;
+  transform: translateY(-2px);
+}
+
+.custom-btn-primary {
+  font-family: var(--font-body);
+  background-color: var(--color-button);
+  border: none;
+  color: #ffffff;
+  width: 150px !important;
+}
+
+.custom-btn-primary:hover {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-dark);
+}
+
+.custom-btn-secondary {
+  font-family: var(--font-body);
+  background-color: transparent;
+  border: 2px solid var(--color-secondary);
+  color: #ffffff;
+  width: 150px !important;
+}
+
+.custom-btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-opcional);
+}
+
+.navbar-toggler {
+  border-color: var(--color-secondary);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand { font-size: 22px; }
+  .logo-nav { height: 40px; width: 40px; margin-right: 8px; }
+}
+
+/* ══════════════════════════════
+   BANNER CONTACTO
+══════════════════════════════ */
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.img-banner-contacto {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(27, 64, 21, 0.4);
+}
+
+/* El texto encima del banner */
+.texto-banner-contacto {
+  position: absolute;   
+  top: 50%;             
+  left: 50%;            
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white;         /* color del texto */
+}
+
+.texto-banner-contacto h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* banner mobile */
+@media (max-width: 768px) {
+  .img-banner-contacto {
+    height: 200px;      
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .texto-banner-contacto h1 {
+    font-size: 2rem;    
+  }
+}
+
+
+/* ══════════════════════════════
+   TÍTULO Y TEXTO FORMULARIO
+══════════════════════════════ */
+section h2 {
+  color: var(--color-dark);
+  font-family: var(--font-title);
+  font-size: 40px;
+}
+
+section p {
+  color: var(--color-button);
+  font-family: var(--font-body);
+  font-size: 18px;
+}
+
+/* ══════════════════════════════
+   LABELS
+══════════════════════════════ */
+.form-label {
+  color: var(--color-opcional);
+  font-family: var(--font-body);
+  font-weight: 00;
+}
+
+/* ══════════════════════════════
+   INPUTS Y SELECT
+══════════════════════════════ */
+.form-control,
+.form-select {
+  border: 1.5px solid var(--color-primary);
+  border-radius: 0.375rem;
+  color: var(--color-button);
+  font-family: var(--font-body);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-dark);
+  box-shadow: 0 0 0 3px rgba(229, 187, 137, 0.35); /* dorado suave */
+}
+
+.form-control::placeholder {
+  color: var(--color-opcional);
+}
+
+/* ══════════════════════════════
+   TEXTAREA
+══════════════════════════════ */
+textarea.form-control {
+  resize: vertical;
+}
+
+/* ══════════════════════════════
+   CHOICES.JS — SELECT CUSTOM
+══════════════════════════════ */
+.choices__inner {
+  border: 1.5px solid var(--color-button);
+  border-radius: 0.375rem;
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  background-color: #ffffff;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: var(--color-accent) !important; /* ✅ reemplaza el azul */
+  color: var(--color-dark) !important;
+}
+
+/* ══════════════════════════════
+   BOTÓN ENVIAR
+══════════════════════════════ */
+.btn-enviar {
+  background-color: var(--color-button);
+  color: var(--color-secondary);
+  font-family: var(--font-body);
+  border: none;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 260px;
+}
+
+.btn-enviar:hover {
+  background-color: var(--color-opcional) !important;
+  color: var(--color-secondary) !important;
+}
+
+/* ══════════════════════════════
+   IMÁGENES DERECHA DEL FORMULARIO
+══════════════════════════════ */
+.img-fluid.rounded-4 {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-fluid.rounded-4:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(111, 93, 68, 0.2) !important;
+}
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.footer {
+  background-color: var(--color-opcional);
+  color: var(--color-secondary);
+  margin-top: 100px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .logo-footer {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.footer p {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+}
+
+.footer hr {
+  border-color: var(--color-accent);
+  opacity: 0.5;
+}
+
+.footer-link {  
+  display: inline-block;  
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-accent);
+  transform: translateY(-2px);
+  
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.texto-derechos {
+  color: #e5bb89 !important;
+}

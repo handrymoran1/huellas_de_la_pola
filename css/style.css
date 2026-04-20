@@ -1,0 +1,513 @@
+/* ══════════════════════════════
+   VARIABLES CORPORATIVAS
+══════════════════════════════ */
+:root {
+  --color-primary: #ccc5b7;
+  --color-secondary: #ffffff;
+  --color-accent: #e5bb89;
+  --color-dark: #6f5d44;
+  --color-button: #5FA62D;
+  --color-opcional: #1B4015;
+  --font-title: "Berkshire Swash", cursive;
+  --font-body: "Yrsa", serif;
+}
+
+/* ══════════════════════════════
+   RESET Y BASES
+══════════════════════════════ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background-color: #f8f4ec;
+  color: var(--color-opcional);
+  line-height: 1.6;
+}
+
+h1, h2, h3 { font-family: var(--font-title); }
+p, a, li { font-family: var(--font-body); }
+
+/* ══════════════════════════════
+   NAVBAR
+══════════════════════════════ */
+.custom-navbar {
+  background-color: var(--color-opcional);
+}
+
+.navbar-brand {
+  font-family: var(--font-title);
+  font-size: 35px;
+  color: var(--color-secondary) !important;
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--color-secondary) !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-accent) !important;
+  transform: translateY(-2px);
+}
+
+.custom-btn-primary {
+  font-family: var(--font-body);
+  font-size: 17px;
+  background-color: var(--color-button);
+  border: none;
+  color: var(--color-secondary);
+  min-width: 140px;
+}
+
+.custom-btn-primary:hover {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-dark);
+}
+
+.custom-btn-secondary {
+  font-family: var(--font-body);
+  font-size: 17px;
+  background-color: transparent;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  min-width: 140px;
+}
+
+.custom-btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-opcional);
+}
+
+.btn-pill {
+  border-radius: 32px;
+}
+
+.navbar-toggler {
+  border-color: var(--color-secondary);
+  
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ══════════════════════════════
+   ACCESIBILIDAD
+══════════════════════════════ */
+.btn:focus,
+.nav-link:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand { font-size: 22px; }
+  .logo-nav { height: 40px; width: 40px; margin-right: 8px; }
+}
+
+.hero-section {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(27, 64, 21, 0.55);
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 4vw, 4.8rem);
+  line-height: 1.05;
+  max-width: 900px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content .lead {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 1.75rem;
+}
+
+.hero-content .eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.dates-panel {
+  margin-top: -4rem;
+  z-index: 2;
+  position: relative;
+}
+
+.dates-panel .card {
+  border-radius: 24px;
+}
+
+.section-subtitle {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  color: var(--color-button);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-title {
+  color: var(--color-opcional);
+  font-size: 2.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.room-card .card-img-top {
+  height: 280px;
+  object-fit: cover;
+}
+
+.about-section {
+  background-color: #ffffff;
+}
+
+.testimonial-card {
+  border: none;
+  border-radius: 24px;
+  background-color: var(--color-secondary);
+  box-shadow: 0 18px 50px rgba(27, 64, 21, 0.08);
+}
+
+.testimonial-author {
+  color: var(--color-dark);
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    min-height: 520px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 420px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ══════════════════════════════
+   BANNER NOSOTROS
+══════════════════════════════ */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Berkshire Swash", serif;
+  margin-bottom: 0;
+}
+
+/* banner nosotros mobile */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* ══════════════════════════════
+   MISION Y VISION
+══════════════════════════════ */
+.titulo-mision-vision {
+  font-family: var(--font-title);
+  color: var(--color-button);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.texto-mision-vision {
+  font-family: var(--font-body);
+  color: var(--color-opcional);
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .texto-mision-vision {
+    font-size: 1rem;  /* ✏️ solo en móvil */
+  }
+
+.titulo-mision-vision {
+    font-size: 1.8rem; /* ✏️ título también */
+  }
+}
+
+.card-tarjeta {
+  color: rgb(238, 238, 238);
+  border: solid 1px var(--color-accent);
+  border-radius: 8px;
+}
+
+.borde-bronce {
+  border-top: 5px solid var(--color-button);
+}
+
+.borde-ocre {
+  border-top: 5px solid var(--color-accent);
+}
+
+
+/* ══════════════════════════════
+   NUESTRO EQUIPO/CARDS
+══════════════════════════════ */
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-img-top {
+  width: 150px;          
+  height: 150px;         
+  object-fit: cover;
+  object-position: top;  
+  margin: 1.5rem auto 0;
+  display: block;
+  border-radius: 50%;    
+}
+
+.card-title {
+  color: #6f5d44;
+  font-weight: 700;
+  height: 50px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-text {
+  color: #8b7a66;
+  font-size: medium;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container.my-5 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1.text-center {
+  color: var(--color-opcional);
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+h1.text-center::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e5bb89;
+  border-radius: 2px;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* btn de las redes */
+.social-icon {
+  font-size: 1.5rem;       
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);   
+}
+
+/* LinkedIn */
+.social-icon.linkedin {
+  color: var(--color-button);           
+}
+
+.social-icon.linkedin:hover {
+  color: var(--color-accent)          
+}
+
+/* GitHub */
+.social-icon.github {
+  color: #6f5d44;           
+}
+
+.social-icon.github:hover {
+  color: var(--color-accent); 
+}
+
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.footer {
+  background-color: var(--color-opcional);
+  color: var(--color-secondary);
+  margin-top: 100px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .logo-footer {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer p {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+}
+
+.footer hr {
+  border-color: var(--color-accent);
+  opacity: 0.5;
+}
+
+.footer-link {  
+  display: inline-block;  
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-accent);
+  transform: translateY(-2px);
+  
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.texto-derechos {
+  color: #e5bb89 !important;
+}
+
+/* *********************************************************** */
+
+
+
+
