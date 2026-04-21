@@ -2,7 +2,7 @@ const btnEnviarHabitacion = document.getElementById("btnEnviarHabitacion");
 const opcionesLista = document.getElementById("opcionesLista");
 const listaContenedor = document.getElementById("lista");
 
-let listaHabitaciones = {habitación:};
+// let listaHabitaciones = {habitación:};
 
 function agregarALista(nombreHabitacion) {
   listaContenedor.innerHTML = `<li class="bg-light p-2 border rounded d-inline-block">
