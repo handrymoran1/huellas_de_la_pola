@@ -26,23 +26,23 @@ p, a, li   { font-family: var(--font-body); }
 /* ══════════════════════════════
    HABITACIONES 
 ══════════════════════════════ */
-.card-pequena{
+.card-habitacion{
     border-radius: 18px;
     overflow: hidden;
     max-width: 260px;
     margin: 0 auto;
   }
 
-  .card-pequena img{
+  .img-habitacion{
     height: 150px;
     object-fit: cover;
   }
 
-  .card-pequena .card-body{
+  .card-texto{
     padding: 20px;
   }
 
-  .card-pequena h6{
+  .card-habitacion h6{
     font-size: 25px;;
     font-weight: 700;
   }
@@ -53,17 +53,21 @@ p, a, li   { font-family: var(--font-body); }
     font-weight: 600;
   }
 
-  .texto-card{
+  .texto-card-habitacion{
     font-size: .8rem;
     line-height: 1.3;
     margin-bottom: 0;
   }
 
   .titulo-habitaciones{
-    font-family: serif;
+    font-family: "Berkshire Swash", serif;
     color: #244d22;
     font-size: 2.5rem;
     font-weight: 700;
+  }
+
+  .btn-reservar {
+    
   }
 
   .linea{
