@@ -1,16 +1,16 @@
 const CLAVE_HABITACIONES = 'habitacionesHuellas'; // Clave para almacenar las habitaciones en localStorage
 
 const habitacionesIniciales = [// Datos de para inicializar las habitaciones
-  { id: 1, nombre: "Habitación 1", precio: 340000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Elegante estancia con cama King.", mostrar: true },
-  { id: 2, nombre: "Habitación 2", precio: 700000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Suite de lujo con balcón.", mostrar: true },
-  { id: 3, nombre: "Habitación 3", precio: 250000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Habitación temática botánica.", mostrar: true },
-  { id: 4, nombre: "Habitación 4", precio: 800000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Suite familiar espaciosa.", mostrar: true },
-  { id: 5, nombre: "Habitación 5", precio: 200000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Opción cómoda y funcional.", mostrar: true },
-  { id: 6, nombre: "Habitación 6", precio: 420000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Vista a la ciudad, cama Queen.", mostrar: true },
-  { id: 7, nombre: "Habitación 7", precio: 550000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Con jacuzzi y terraza.", mostrar: true },
-  { id: 8, nombre: "Habitación 8", precio: 310000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Económica pero acogedora.", mostrar: true },
-  { id: 9, nombre: "Habitación 9", precio: 670000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Doble con vistas panorámicas.", mostrar: true },
-  { id: 10, nombre: "Habitación 10", precio: 920000, imagen: "https://cf.bstatic.com/xdata/images/hotel/max500/628845242.jpg?k=3209f9fd03249026033e55b31ed109d9b6486e83c13857af18278f98b8d43e3a&o=", descripcion: "Presidencial con servicio 24h.", mostrar: true }
+  { id: 1, nombre: "ALOJAMIENTO", precio: 340000, imagen: "", descripcion: "Elegante esia cotancn cama gfgfgfgfgdfgdfgddfgdfgdfgdfghghghg.", mostrar: true },
+  { id: 2, nombre: "Habitación 2", precio: 700000, imagen: "", descripcion: "Suite de lujo con balcón.", mostrar: true },
+  { id: 3, nombre: "Habitación 3", precio: 250000, imagen: ".", descripcion: "Habitación temática botánica.", mostrar: true },
+  { id: 4, nombre: "Habitación 4", precio: 800000, imagen: ".", descripcion: "Suite familiar espaciosa.", mostrar: true },
+  { id: 5, nombre: "Habitación 5", precio: 200000, imagen: ".", descripcion: "Opción cómoda y funcional.", mostrar: true },
+  { id: 6, nombre: "Habitación 6", precio: 420000, imagen: ".", descripcion: "Vista a la ciudad, cama Queen.", mostrar: true },
+  { id: 7, nombre: "Habitación 7", precio: 550000, imagen: ".", descripcion: "Con jacuzzi y terraza.", mostrar: true },
+  { id: 8, nombre: "Habitación 8", precio: 310000, imagen: ".", descripcion: "Económica pero acogedora.", mostrar: true },
+  { id: 9, nombre: "Habitación 9", precio: 670000, imagen: ".", descripcion: "Doble con vistas panorámicas.", mostrar: true },
+  { id: 10, nombre: "Habitación 10", precio: 920000, imagen: ".", descripcion: "Presidencial con servicio 24h.", mostrar: true }
 ];
 
 function inicializarHabitaciones() {// Solo se inicializan si no hay datos previos en localStorage
