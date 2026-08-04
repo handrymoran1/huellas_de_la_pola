@@ -1,4 +1,4 @@
-## TerraViva — Frontend
+# TerraViva — Frontend
 
 Sistema de reservas para hotel boutique como sitio web estático con HTML, CSS y JavaScript.
 

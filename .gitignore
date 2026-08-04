@@ -95,6 +95,3 @@ bower_components/
 public/build/
 dist/
 coverage/
-
-# If you add files that are already tracked, use git rm --cached to stop tracking them.
-# End of .gitignore
