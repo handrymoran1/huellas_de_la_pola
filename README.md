@@ -1,134 +1,77 @@
-au<div align="center">
+## TerraViva — Frontend
 
-# 🏨TerraViva
+Sistema de reservas para hotel boutique como sitio web estático con HTML, CSS y JavaScript.
 
-### Sistema de reservas para hotel boutique
-*Aplicación web estática · HTML · CSS · JavaScript*
+## 🌐 Repositorios
 
-</div>
-
----
+- Frontend: https://github.com/handrymoran1/TerraViva
+- Backend: https://github.com/Fasalpa/TerraViva-Backend
 
 ## 📖 Descripción
 
-**VivaTerra** es un sistema de reservas para un hotel boutique, desarrollado como aplicación web estática con HTML, CSS y JavaScript puro. Permite a los usuarios registrarse, iniciar sesión, buscar disponibilidad, explorar habitaciones, realizar reservas y gestionar su perfil personal. Incluye además un panel de administración completo para la gestión del catálogo de habitaciones.
+Esta carpeta contiene la interfaz del cliente de TerraViva:
+- Páginas de reserva
+- Registro e inicio de sesión
+- Perfil de usuario
+- Panel de administración de habitaciones
 
----
+El frontend funciona como una aplicación estática, destinada a ser consumida por el backend en caso de integración.
 
-## 🛠️ Tecnologías utilizadas
+## 🧩 Estructura de `TerraViva/`
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript_ES6-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+```
+TerraViva/
+├── index.html
+├── formspree.json
+├── css/
+├── js/
+├── html/
+├── assets/
+├── img-nosotros/
+└── data_base/
+```
 
-| Tecnología | Uso |
-|---|---|
-| HTML5 | Estructura y marcado semántico |
-| CSS3 | Estilos y diseño visual |
-| JavaScript ES6 | Lógica de negocio e interactividad |
-| Bootstrap 5 + Bootstrap Icons | Componentes UI y sistema de grilla |
-| `localStorage` / `sessionStorage` | Persistencia de datos en el navegador |
+### Archivos y carpetas clave
 
----
+- `index.html`: página principal.
+- `html/`: páginas secundarias como `habitaciones.html`, `iniciarSesion.html`, `registrar.html`, `perfil_usuario.html`, `dashboard.html`, `contactanos.html`, `detalleReserva.html`.
+- `css/`: estilos por página.
+- `js/`: lógica de navegación, sesión, reservas, detalles y administración.
+- `assets/` / `img-nosotros/`: recursos gráficos e imágenes.
+- `data_base/terraviva.sql`: ejemplo de base de datos o script de respaldo.
+
+## 🚀 Ejecución
+
+El frontend no requiere instalación de dependencias.
+
+1. Clona el repositorio frontend:
+   ```bash
+   git clone https://github.com/handrymoran1/TerraViva.git
+   cd TerraViva
+   ```
+
+2. Abre `index.html` en tu navegador.
+
+3. Opcional: usa **Live Server** en VS Code para servir el contenido localmente.
 
 ## ✨ Características principales
 
-### 👤 Para usuarios
-- Página de inicio con carrusel visual, buscador de fechas y selección de huéspedes
-- Registro con validaciones de correo, teléfono y contraseña
-- Inicio de sesión con historial en `localStorage` y estado persistente
-- Perfil editable: nombre, teléfono, avatar dinámico y navegación protegida
-- Catálogo de habitaciones dinámico y responsive
-- Página de detalle de reserva con habitación seleccionada, fechas, huéspedes, noches y total a pagar
-- Confirmación de reserva con historial guardado en `localStorage`
+- Registro e inicio de sesión.
+- Perfil de usuario editable.
+- Catálogo de habitaciones responsive.
+- Detalle de reserva con cálculo de noches y total.
+- Panel administrativo para agregar, editar y eliminar habitaciones.
+- Persistencia de datos en el navegador con `localStorage` / `sessionStorage`.
 
-### 🔧 Panel de administración
-- Agregar nuevas habitaciones al catálogo
-- Editar y eliminar habitaciones existentes
-- Mostrar u ocultar habitaciones del catálogo público
-- Contadores de habitaciones disponibles y ocupadas
+## 🔗 Conexión con el backend
 
----
+Esta interfaz está pensada para integrarse con el backend de TerraViva.
 
-## 📁 Estructura del proyecto
-
-```
-Terra-Viva/
-│
-├── index.html          # Página principal
-├── html/               # Páginas secundarias (habitaciones, contacto, perfil, registro, etc.)
-├── css/                # Estilos personalizados por sección
-├── js/                 # Lógica de navegación, registro, login, administración y reservas
-└── assets/             # Imágenes y recursos gráficos
-```
-
----
-
-## 🚀 Cómo ejecutar
-
-> No requiere instalación de dependencias ni herramientas de build.
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/handrymoran1/Terra-Viva.git
-   cd Terra-Viva
-   ```
-
-2. Abre `index.html` en tu navegador (o usa **Live Server** en VS Code).
-
----
-
-## 🗺️ Flujo de uso
-
-```
-Abrir index.html
-      ↓
-Ingresar fechas y número de huéspedes
-      ↓
-Buscar disponibilidad → Catálogo de habitaciones
-      ↓
-Registrarse / Iniciar sesión
-      ↓
-Seleccionar habitación → Confirmar reserva
-      ↓
-Consultar historial desde el perfil
-```
-
----
-
-## 🔑 Credenciales de administrador
-
-| Campo | Valor |
-|---|---|
-| Correo | `.....` |
-| Contraseña | `......*` |
-
-> El administrador accede al panel desde `html/dashboard.html`.
-
----
+- Repositorio del backend: https://github.com/Fasalpa/TerraViva-Backend
+- En este repositorio local, la carpeta del backend es `../Backend/TerraViva-Backend/`.
 
 ## 📝 Notas importantes
 
-- El sistema es **100% estático**: no requiere backend ni servidor.
-- Usuarios, habitaciones y reservas se almacenan en el **navegador del cliente**.
-- Para limpiar datos de prueba, borrar el `localStorage` desde las herramientas de desarrollo del navegador (`F12 → Application → Local Storage → Clear`).
-
----
-
-## 👥 Equipo de desarrollo
-
-| Nombre | Rol |
-|---|---|
-| **Handry Morán** | Full Stack Developer |
-| **Joan Triana** | Full Stack Developer |
-| **Robinson Salamanca** | Full Stack Developer |
-| **Brayan Velásquez** | Full Stack Developer |
-
----
-
-<div align="center">
-
-Hecho con 💚 por el equipo **Terra-Viva** · 2025
-
-</div>
+- El frontend puede funcionar como demo estático.
+- Para un sistema completo, usa el backend de Spring Boot junto con la API REST.
+- Si necesitas revisar el backend, abre `../Backend/TerraViva-Backend/README.md` o visita el repositorio remoto.
